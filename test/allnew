@@ -1,0 +1,28 @@
+#!/bin/bash
+
+rm *.new.s
+
+echo
+echo "----------------------------------------------------------"
+echo
+echo "--> Running opt on the following files:"
+echo
+
+for BAZ in `ls *.s`
+do
+    echo "            $BAZ                "
+done
+
+echo
+echo "----------------------------------------------------------"
+
+for FOO in `ls *.s`
+do
+    echo
+    echo "================================"
+    echo "            $FOO                "
+    echo "================================"
+    echo
+    BAR=`basename $FOO .s`
+    ../opts/opt < ./$BAR.s > $BAR.new.s
+done

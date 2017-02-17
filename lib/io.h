@@ -1,0 +1,13 @@
+void classifyinst(short, itemarray, enum insttype *, int *, int *, int *);
+void reclassifyinsts();
+void makeinstitems(char *, short *, itemarray *, int);
+void setupinstinfo(struct assemline *);
+int readinfunc();
+void dumpblk(FILE *, struct bblk *);
+void dumpoutblks(FILE *, unsigned int, unsigned int);
+void dumpblks(int, int);
+void dumpfunc();
+void dumpruleusage();
+void dumpfunccounts();
+void dumptotalcounts();
+void dumpoptcounts();

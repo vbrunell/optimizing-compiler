@@ -1,0 +1,8 @@
+#!/bin/bash
+
+./allnew
+sleep 1
+./allres
+cd ../results
+./comp
+cd -

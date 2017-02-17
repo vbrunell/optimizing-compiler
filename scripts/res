@@ -1,0 +1,89 @@
+#!/bin/bash
+
+    if [[ $1 == "banner.new.s" ]]
+    then
+        gcc -g $1
+        a.out hello world! > ../results/$1.txt
+        echo
+        echo
+        echo "<<< Results written for $1 >>>"
+        echo
+        #cat ../results/$1.txt
+    fi
+
+    if [[ $1 == "cal.new.s" ]]
+    then
+        gcc -g $1
+        a.out 8 2016 > ../results/$1.txt
+        echo
+        echo
+        echo "<<< Results written for $1 >>>"
+        echo
+        #cat ../results/$1.txt
+    fi
+
+    if [[ $1 == "echo.new.s" ]]
+    then
+        gcc -g $1
+        a.out hello world! > ../results/$1.txt
+        echo
+        echo
+        echo "<<< Results written for $1 >>>"
+        echo
+        #cat ../results/$1.txt
+    fi
+
+    if [[ $1 == "find.new.s" ]]
+    then
+        gcc -g $1
+        a.out < ../input.txt > ../results/$1.txt
+        echo
+        echo
+        echo "<<< Results written for $1 >>>"
+        echo
+        #cat ../results/$1.txt
+    fi
+
+    if [[ $1 == "half.new.s" ]]
+    then
+        gcc -g $1
+        a.out > ../results/$1.txt
+        echo
+        echo
+        echo "<<< Results written for $1 >>>"
+        echo
+        #cat ../results/$1.txt
+    fi
+
+    if [[ $1 == "queens.new.s" ]]
+    then
+        gcc -g $1
+        a.out > ../results/$1.txt
+        echo
+        echo
+        echo "<<< Results written for $1 >>>"
+        echo
+        #cat ../results/$1.txt
+    fi
+
+    if [[ $1 == "square.new.s" ]]
+    then
+        gcc -g $1
+        a.out > ../results/$1.txt
+        echo
+        echo
+        echo "<<< Results written for $1 >>>"
+        echo
+        #cat ../results/$1.txt
+    fi
+
+    if [[ $1 == "wc.new.s" ]]
+    then
+        gcc -g $1
+        a.out "echo.s" > ../results/$1.txt
+        echo
+        echo
+        echo "<<< Results written for $1 >>>"
+        echo
+        #cat ../results/$1.txt
+    fi

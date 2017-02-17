@@ -1,0 +1,19 @@
+#!/bin/bash
+
+cd lib
+
+for FOO in `ls *.h`
+do
+    echo >> hindex.h
+    echo "=======================================" >> hindex.h
+    echo $FOO >> hindex.h
+    echo "=======================================" >> hindex.h
+    echo >> hindex.h
+    if [ ${FOO: -2} == ".h" ] 
+    then
+        cat $FOO >> hindex.h
+    fi
+done
+
+mv hindex.h ..
+cd -

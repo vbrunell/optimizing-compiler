@@ -1,0 +1,2 @@
+enter a key
+position of key 4 is 5

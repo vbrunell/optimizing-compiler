@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#int swa = FALSE;      /* assembly with no extra comments   */
+#int swb = FALSE;      /* reverse branches flag             */
+#int swc = FALSE;      /* branch chaining flag              */
+#int swd = FALSE;      /* dead assignment elimination flag  */
+#int swe = FALSE;      /* local cse flag                    */
+#int swf = FALSE;      /* fill delay slots flag             */
+#int swm = FALSE;      /* loop-invariant code motion flag   */
+#int swo = FALSE;      /* copy propagation flag             */
+#int swp = FALSE;      /* peephole optimization flag        */
+#int swr = FALSE;      /* register allocation flag          */
+#int swu = FALSE;      /* unreachable code elimination flag */
+
+#possible flags: -BCDEFMOPRU
+
+../opts/opt < ./$1.s > $1.new.s

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+./new $1
+sleep 1
+./res $1.new.s
+cd ../results
+./comp
+cd -

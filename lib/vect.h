@@ -1,0 +1,13 @@
+void binsert(bvect *, unsigned int);
+void bdelete(bvect *, unsigned int);
+void bunion(bvect *, bvect);
+void binter(bvect *, bvect);
+int bin(bvect, unsigned int);
+void bcpy(bvect *, bvect);
+int bequal(bvect, bvect);
+bvect ball();
+void bclear(bvect);
+int bcnt(bvect);
+bvect bnone();
+void bfree(bvect);
+void bdump(FILE *, bvect);

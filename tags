@@ -1,0 +1,84 @@
+INST	hindex.h	/^#define INST(t) (t != COMMENT_LINE && t != DEFINE_/
+Mopt	lib/opt.c	/^int main(int argc, char *argv[])$/
+TOC	hindex.h	/^#define TOC(t)  (t == BRANCH_INST || t == CALL_INS/
+addtoblist	lib/misc.c	/^void addtoblist(struct blist **head, struct bblk */
+alloc	lib/misc.c	/^void *alloc(unsigned int bytes)$/
+allocreg	lib/vars.c	/^int allocreg(short type, varstate r, char *reg)$/
+allocstring	lib/misc.c	/^char *allocstring(char *str)$/
+assignlabel	lib/misc.c	/^void assignlabel(struct bblk *cblk, char *label)$/
+ball	lib/vect.c	/^bvect ball()$/
+bclear	lib/vect.c	/^void bclear(bvect sptr)$/
+bcnt	lib/vect.c	/^int bcnt(bvect sptr)$/
+bcpy	lib/vect.c	/^void bcpy(bvect *dst, bvect src)$/
+bdelete	lib/vect.c	/^void bdelete(bvect *sptr, unsigned int r)$/
+bdump	lib/vect.c	/^void bdump(FILE *fout, bvect ptr)$/
+bequal	lib/vect.c	/^int bequal(bvect a, bvect b)$/
+bfree	lib/vect.c	/^void bfree(bvect ptr)$/
+bin	lib/vect.c	/^int bin(bvect ptr, unsigned int r)$/
+binit	hindex.h	/^#define binit() ((bvect) NULL)$/
+binsert	lib/vect.c	/^void binsert(bvect *sptr, unsigned int r)$/
+binter	lib/vect.c	/^void binter(bvect *result, bvect vec)$/
+bnone	lib/vect.c	/^bvect bnone()$/
+bunion	lib/vect.c	/^void bunion(bvect *result, bvect vec)$/
+calcregpos	lib/vars.c	/^int calcregpos(char *regtext)$/
+check_cf	lib/flow.c	/^void check_cf()$/
+checkflags	lib/opt.c	/^void checkflags(char *flags)$/
+classifyinst	lib/io.c	/^void classifyinst(short numitems, itemarray items,/
+clearstatus	lib/flow.c	/^void clearstatus()$/
+createmove	lib/misc.c	/^void createmove(int type, char *src, char *dst, st/
+deleteblk	lib/misc.c	/^void deleteblk(struct bblk *cblk)$/
+delfromblist	lib/misc.c	/^struct bblk *delfromblist(struct blist **head, str/
+delfrompreds_succs	lib/misc.c	/^void delfrompreds_succs(struct bblk *cblk)$/
+delfromsuccs_preds	lib/misc.c	/^void delfromsuccs_preds(struct bblk *cblk)$/
+delline	lib/misc.c	/^void delline(struct assemline *ptr)$/
+delreg	lib/vars.c	/^void delreg(char *regstr, varstate vars, int numre/
+delvar	lib/vars.c	/^void delvar(varstate v, int pos)$/
+dumpblk	lib/io.c	/^void dumpblk(FILE *fout, struct bblk *cblk)$/
+dumpblks	lib/io.c	/^void dumpblks(int num1, int num2)$/
+dumpfunc	lib/io.c	/^void dumpfunc()$/
+dumpfunccounts	lib/io.c	/^void dumpfunccounts()$/
+dumploop	lib/misc.c	/^void dumploop(FILE *fout, struct loopnode *lptr)$/
+dumploops	lib/misc.c	/^void dumploops(FILE *fout)$/
+dumpoptcounts	lib/io.c	/^void dumpoptcounts()$/
+dumpoutblks	lib/io.c	/^void dumpoutblks(FILE *fout, unsigned int num1, un/
+dumpruleusage	lib/io.c	/^void dumpruleusage()$/
+dumptotalcounts	lib/io.c	/^void dumptotalcounts()$/
+dumpvarstate	lib/vars.c	/^void dumpvarstate(char *out, varstate v)$/
+findblk	lib/flow.c	/^struct bblk *findblk(char *label)$/
+freeblist	lib/misc.c	/^void freeblist(struct blist *head)$/
+freeblk	lib/misc.c	/^void freeblk(struct bblk *cblk)$/
+freeline	lib/misc.c	/^void freeline(struct assemline *ptr)$/
+freeloops	lib/misc.c	/^void freeloops()$/
+hookupline	lib/misc.c	/^void hookupline(struct bblk *cblk, struct assemlin/
+inblist	lib/misc.c	/^int inblist(struct blist *head, struct bblk *cblk)/
+incropt	lib/misc.c	/^void incropt(enum opttype opt)$/
+insline	lib/misc.c	/^struct assemline *insline(struct bblk *cblk, struc/
+insreg	lib/vars.c	/^void insreg(char *reg, varstate v, int numreg)$/
+insvar	lib/vars.c	/^void insvar(varstate v, int pos)$/
+intervar	lib/vars.c	/^void intervar(varstate vd, varstate v1, varstate v/
+isreg	lib/vars.c	/^int isreg(char *regtext)$/
+makeinstitems	lib/io.c	/^void makeinstitems(char *text, short *numitems, it/
+minusvar	lib/vars.c	/^void minusvar(varstate vd, varstate v1, varstate v/
+newblk	lib/misc.c	/^struct bblk *newblk(char *label)$/
+newline	lib/misc.c	/^struct assemline *newline(char *text)$/
+newloop	lib/misc.c	/^struct loopnode *newloop()$/
+numberblks	lib/flow.c	/^void numberblks()$/
+orderpreds	lib/misc.c	/^void orderpreds()$/
+quit	lib/misc.c	/^void quit(int flag)$/
+readinfunc	lib/io.c	/^int readinfunc()$/
+reclassifyinsts	lib/io.c	/^void reclassifyinsts()$/
+regexists	lib/vars.c	/^int regexists(char *reg, varstate v)$/
+replacestring	lib/misc.c	/^void replacestring(char **s1, char *old, char *new/
+setsuses	lib/vars.c	/^void setsuses(char *text, enum insttype type, int /
+setupcontrolflow	lib/flow.c	/^void setupcontrolflow()$/
+setupinstinfo	lib/io.c	/^void setupinstinfo(struct assemline *ptr)$/
+sortblist	lib/misc.c	/^void sortblist(struct blist *head)$/
+unhookline	lib/misc.c	/^void unhookline(struct assemline *ptr)$/
+unionvar	lib/vars.c	/^void unionvar(varstate vd, varstate v1, varstate v/
+unlinkblk	lib/misc.c	/^void unlinkblk(struct bblk *cblk)$/
+varcmp	lib/vars.c	/^int varcmp(varstate v1, varstate v2)$/
+varcommon	lib/vars.c	/^int varcommon(varstate v1, varstate v2)$/
+varcopy	lib/vars.c	/^void varcopy(varstate vd, varstate vs)$/
+varempty	lib/vars.c	/^int varempty(varstate v)$/
+varinit	lib/vars.c	/^void varinit(varstate v)$/
+varname	lib/vars.c	/^char *varname(int pos)$/

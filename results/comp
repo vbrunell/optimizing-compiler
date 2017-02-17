@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo
+echo ":::::::::::::::::: Results :::::::::::::::::::"
+echo
+echo
+for FOO in `ls *.txt`
+do
+    BAR=`basename $FOO .new.s.txt`
+    echo "---------------------------"
+    echo "           $BAR            "
+    echo "---------------------------"
+    diff $FOO ref/$BAR.s.txt
+    echo
+done
+echo
+echo ":::::::::::::::::::::::::::::::::::::::::::::::"

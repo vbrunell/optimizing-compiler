@@ -1,0 +1,71 @@
+#!/bin/bash
+
+echo
+echo
+echo "##############################################"
+echo
+echo "--> Getting results for: "
+echo
+for FOO in `ls *.s`
+do
+    if [[ $FOO == "banner.new.s" ]]
+    then
+        echo "        $FOO "
+        gcc -g $FOO
+        a.out hello world! > ../results/$FOO.txt
+    fi
+
+    if [[ $FOO == "cal.new.s" ]]
+    then
+        echo "        $FOO "
+        gcc -g $FOO
+        a.out 8 2016 > ../results/$FOO.txt
+    fi
+
+    if [[ $FOO == "echo.new.s" ]]
+    then
+        echo "        $FOO "
+        gcc -g $FOO
+        a.out hello world! > ../results/$FOO.txt
+    fi
+
+    if [[ $FOO == "find.new.s" ]]
+    then
+        echo "        $FOO "
+        gcc -g $FOO
+        a.out < ../input.txt > ../results/$FOO.txt
+    fi
+
+    if [[ $FOO == "half.new.s" ]]
+    then
+        echo "        $FOO "
+        gcc -g $FOO
+        a.out > ../results/$FOO.txt
+    fi
+
+    if [[ $FOO == "queens.new.s" ]]
+    then
+        echo "        $FOO "
+        gcc -g $FOO
+        a.out > ../results/$FOO.txt
+    fi
+
+    if [[ $FOO == "square.new.s" ]]
+    then
+        echo "        $FOO "
+        gcc -g $FOO
+        a.out > ../results/$FOO.txt
+    fi
+
+    if [[ $FOO == "wc.new.s" ]]
+    then
+        echo "        $FOO "
+        gcc -g $FOO
+        a.out "echo.s" > ../results/$FOO.txt
+    fi
+
+done
+
+echo
+echo "##############################################"
+echo
